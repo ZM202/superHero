@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+/* DO NOT EDIT ABOVE THIS LINE */
+
+
+
+
+/* Style the body */
+
+
+/* Header/logo Title */
+.header{
+  background: url("images/header_img.jpg") no-repeat;
+  background-size: cover;
+  width: 1350px;
+  height: 200px;
+  text-align: center;
+  margin: 0px 0px -5px 0px;
+}
+/* Column container */
+
+
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.row{
+  background-color: gray;
+
+}
+.row > div{
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Main column */
+#addHero{
+  background-color: #008CBA;
+}
+
+
+/* Hero image, just for this example */
+
+
+
+
+/* Footer */
+.footer{
+  background-color: gray;
+  text-align: center;
+  
+}
+
+
+
+/* DO NOT EDIT BELOW THIS LINE */
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+  .hero-card {
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+}
